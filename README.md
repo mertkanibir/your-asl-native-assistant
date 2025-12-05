@@ -81,12 +81,10 @@ If you wish to train the ASL detection model on your own dataset:
 # Contributors
 
 - Allen Fertidos
-- Taylor Burgos
-- Hayden Harrell
 - Mert Kanibir
 - Jordan Lee
-- Melvin Ortiz
-- Emily Scott
+- Eldho Thomas
+- Jonathan Zhang
 
 # License
 
