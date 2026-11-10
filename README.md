@@ -15,7 +15,6 @@ YANA is an AI-powered American Sign Language (ASL) assistant that combines real-
 1. **Get the Project Files:**
    - Download the project files from the shared Google Drive
    - Extract the files to your desired location
-   - **IMPORTANT:** The provided `app.py` contains an API key for spare use. If you intend to use this program often, you will need to replace it with your own.
 
 2. **Create and Activate Virtual Environment for Mac (If you haven't done so):**
 ```bash
@@ -31,12 +30,13 @@ pip install -r requirements.txt
 4. **Set Up OpenAI API (Required for AI conversation):**
    - Create an account at https://platform.openai.com/
    - Get your API key from the dashboard
-   - Add credits to your account (starts with $5 free credit)
-   - Open `app.py` and replace the placeholder API key with your own:
-     ```python
-     client = OpenAI(api_key="your-api-key-here")
+   - Configure billing as required by your OpenAI account.
+   - Set your API key in the same terminal before running the application:
+     ```bash
+     export OPENAI_API_KEY="your-api-key-here"
      ```
-   - **IMPORTANT:** Never share your API key or commit it to version control
+   - The application reads `OPENAI_API_KEY` from the environment. No key is bundled with the project.
+   - **IMPORTANT:** Never share your API key or commit it to version control. Revoke any key previously committed to the repository.
 
 5. **Run the Application:**
 ```bash

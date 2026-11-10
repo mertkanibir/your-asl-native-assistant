@@ -13,7 +13,8 @@ from utils.cvfpscalc import CvFpsCalc
 from model.keypoint_classifier.keypoint_classifier import KeyPointClassifier
 
 # OpenAI API configuration
-client = OpenAI(api_key="RETIRED_API_KEY_REMOVED")
+# Reads OPENAI_API_KEY from the environment; never commit credentials.
+client = OpenAI()
 
 datasetdir = "model/dataset/dataset 1"
 
