@@ -13,7 +13,10 @@ from utils.cvfpscalc import CvFpsCalc
 from model.keypoint_classifier.keypoint_classifier import KeyPointClassifier
 
 # OpenAI API configuration
-client = OpenAI(api_key="RETIRED_API_KEY_REMOVED")
+api_key = os.environ.get("OPENAI_API_KEY")
+if not api_key or not api_key.strip():
+    raise RuntimeError("Set OPENAI_API_KEY in your environment before running YANA.")
+client = OpenAI(api_key=api_key)
 
 datasetdir = "model/dataset/dataset 1"
 
