@@ -20,6 +20,8 @@
 
 <p align="center">Binghamton University · First-year Research Immersion</p>
 
+**Public release preparation, 9 November 2026:** Cleaned the maintained repository history and local environment artifacts, cleared notebook outputs, and edited this README for public release. The missing runtime assets documented below still prevent a clean-clone launch.
+
 ## Semester 3 research poster
 
 [![YANA Semester 3 research poster with the team, methods, demonstration images, results, and references](docs/media/yana-semester-3-poster.png)](docs/media/yana-semester-3-poster.pdf)
@@ -52,7 +54,7 @@ Alphabet-gesture classification is the implemented recognition scope. The Semest
 
 ## Environment preparation
 
-Use a fresh Python environment compatible with the pinned TensorFlow 2.16.1 dependency. The repository does not provide a tested dependency lock. Its historical checked-in `venv/` files are machine-specific remnants and should not be used as an installation environment.
+Use a fresh Python environment compatible with the pinned TensorFlow 2.16.1 dependency. The repository does not provide a tested dependency lock. Bundled machine-specific environment files were removed during release preparation. Local virtual environments are ignored.
 
 After restoring the missing runtime assets:
 
@@ -85,7 +87,7 @@ The client reads `OPENAI_API_KEY` from the shell environment. An unset or blank 
 
 ## Training and repository layout
 
-[`keypoint_classification.ipynb`](keypoint_classification.ipynb) reads the landmark CSV, splits training and test data, trains a dense classifier, and exports Keras and TensorFlow Lite artifacts. Its evaluation cells use scikit-learn, pandas, seaborn, and matplotlib. Review historical notebook output and use a compatible local environment before reproducing training.
+[`keypoint_classification.ipynb`](keypoint_classification.ipynb) reads the landmark CSV, splits training and test data, trains a dense classifier, and exports Keras and TensorFlow Lite artifacts. Its evaluation cells use scikit-learn, pandas, seaborn, and matplotlib. Outputs and execution counts were cleared for public release. Use a compatible local environment to reproduce training and evaluation.
 
 | Path | Purpose |
 | --- | --- |
